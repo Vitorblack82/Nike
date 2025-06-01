@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+body {
+    background: #ccee66;
+    color: white;
+    padding: 20px 160px;
+    height: 100vh;
+    overflow: hidden;
+
+
+}
+
+body::before {
+    content: "";
+    background: #242323;
+    top: 0;
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    right: 600px;
+    transform: rotate(-70deg);
+
+}
+
+body::after {
+    content: url(./assets/pngwing.com.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: black;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+  
+
+
+
+
+}
+
+.logo-nike {
+    width: 80px;
+    margin-bottom: 40px;
+}
+
+h4 {
+    font-size: 30px;
+    margin-bottom: 30px;
+
+}
+
+h1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 80px;
+    max-width: 500px;
+}
+
+.botao-carrinho {
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #a3be52;
+    font-size: 26px;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.botao-carrinho:hover {
+    opacity: 0.7;
+
+}
+
+.tenis {
+    width: 800px;
+    transform: rotate(-25deg);
+    border: none;
+    filter: drop-shadow(30px 45px 30px #161616);
+    transition: 1s;
+}
+
+.container-principal {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+.container-tenis {
+    margin-top: 15%;
+}
+
+
+
+.azul {
+    background-color: #58cced;
+
+}
+
+.verde {
+    background-color: #ccee66;
+
+}
+
+.rosa {
+    background: #ff9eb5;
+
+}
+
+.botao {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    cursor: pointer;
+
+
+}
+
+.caixa-botoes {
+    display: flex;
+    gap: 15px;
+    /* Espaço entre os botões */
+    margin-top: 60px;
+    /* Distância do botão do carrinho */
+    justify-content: center;
+    /* Centraliza os botões */
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    /* Empilha os elementos verticalmente */
+    align-items: flex-start;
+    /* Alinha à esquerda (opcional) */
+    max-width: 500px;
+}
+
+.botao:active {
+    opacity: 0.5;
+}
+
+.troca-efeito {
+    opacity: 0;
+    transform: rotate(-25deg) translateY(-30px);
+
+}
+
+.verde:hover {
+    opacity: 0.5;
+}
+
+.azul:hover {
+    opacity: 0.5;
+}
+
+.rosa:hover {
+    opacity: 0.5;
+}
